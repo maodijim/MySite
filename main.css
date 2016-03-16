@@ -1,14 +1,20 @@
 @charset "UTF-8";
 
 body {
-	background-color: rgba(204,204,204,1.00);
+	background-image: url(img/Bar%20Restaurant%20with%20Table%20Counter.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	height:auto;
 }
 #banner{
 	background-color: rgba(35,32,119,1.00);
 	color:rgba(0,0,0,1.00);
-	width: 100%;
+	width: 1000 px;
+	position: ;
 }
-#banner h1 img{ height: auto;
+#banner h1 img{ height: 80px;
+				width: 350px;
 }
 
 #wrapper{width:1000px; margin:0 auto; background-color:rgba(255,255,255,1.00);
@@ -20,6 +26,7 @@ padding: 20px;}
 	font-size: 20px;}
 
 .link{
+	/*background-color:rgba(0,0,0,1.00);*/
 	width: 350px;
 	 float:right;}
 .link ul{text-align:right;}
@@ -31,13 +38,15 @@ padding: 20px;}
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
+	
 	}
-.link li a:hover{color: rgba(191,99,23,1.00)}
+.link li a:hover:not(active){color: rgba(191,99,23,1.00);}
 .link li a:active{
-	color: rgba(3,255,7,1.00)
-}
+	background-color:rgba(190,186,187,1.00);
+	color: rgba(255,255,255,1.00)};
 
-.background {
+#demo {color:black;}
+.background p1 {
 	background-image: url(img/Bar%20Restaurant%20with%20Table%20Counter.jpg);
 	object-fit: cover;
 	margin:30px 0;
@@ -57,4 +66,6 @@ body div p {
 }
 #footer p {
 	color: rgba(0,0,0,1.00);
+}
+body p {
 }
